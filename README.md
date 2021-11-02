@@ -5,5 +5,5 @@ Command-line-tools installer on Android from Google Cloud Console
   <summary>Demo</summary>
 </details>
 
-# Run
+### Install
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/brunodavi/cmdline-tools-installer/master/cmdline-tools-installer.sh)"
