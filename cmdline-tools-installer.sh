@@ -1,5 +1,5 @@
 # Dependencies
-apt install openjdk-11-jdk
+sudo apt install openjdk-11-jdk
 
 dir="sdk/cmdline-tools/latest"
 site="https://developer.android.com/studio"
