@@ -9,9 +9,13 @@ pattern="commandlinetools-linux-\d+_latest.zip"
 name="$(curl -s $site | grep -Pom 1 $pattern)"
 
 # Install command-line-tools
-mkdir -p $dir
 wget -q --show-progress "$repo/$name" 
-unzip -jo $name cmdline-tools -d $dir
+unzip $name
+
+mkdir latest sdk
+mv cmdline-tools/* latest/
+mv cmdline-tools/ sdk/
+mv latest sdk/cmdline-tools/
 
 echo "
 export ANDROID_SDK_ROOT='$(realpath ./sdk)'
