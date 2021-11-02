@@ -3,6 +3,7 @@ Command-line-tools installer on Android from Google Cloud Console
 
 <details>
   <summary>Demo</summary>
+  <img src="demo.gif">
 </details>
 
 ### Install
