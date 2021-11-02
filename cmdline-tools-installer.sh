@@ -18,7 +18,7 @@ export ANDROID_SDK_ROOT='$(realpath ./sdk)'
 " >> ~/.bashrc
 
 # Accept all licenses
-./$dir/bin/sdkmanager --licences
+./$dir/bin/sdkmanager --licenses
 
 source ~/.bashrc
 
