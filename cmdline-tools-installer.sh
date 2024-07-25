@@ -1,5 +1,5 @@
 # Dependencies
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-17-jdk
 
 dir="sdk/cmdline-tools/latest"
 site="https://developer.android.com/studio"
@@ -22,7 +22,6 @@ export ANDROID_SDK_ROOT='$(realpath ./sdk)'
 " >> ~/.bashrc
 
 # Accept all licenses
-./$dir/bin/sdkmanager --licenses
+yes | ./$dir/bin/sdkmanager --licenses
 
 source ~/.bashrc
-
